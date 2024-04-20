@@ -1,0 +1,54 @@
+body {
+  position: relative; /* Add this */
+  background-color: rgb(242, 233, 241);
+}
+
+#comingsoon {
+  text-align: center;
+  margin-top: 20vh;
+  margin-left: -10%;
+  font-size: 5rem;
+  font-family: "Pacifico", cursive;
+}
+
+#Wedsa {
+  color: rgb(255, 20, 147);
+  /* rgba(230, 49, 120, 255); */
+  text-shadow: 0.125rem 0.125rem 0 white, -0.125rem -0.125rem 0 white,
+    0.125rem -0.125rem 0 white, -0.125rem 0.125rem 0 white; /* Add this */
+}
+
+#Club {
+  text-shadow: 0.125rem 0.125rem 0 rgb(255, 20, 147),
+    -0.125rem -0.125rem 0 rgb(255, 20, 147),
+    0.125rem -0.125rem 0 rgb(255, 20, 147),
+    -0.125rem 0.125rem 0 rgb(255, 20, 147); /* Add this */
+  color: white;
+}
+
+#description {
+  padding-left: 20%;
+  font-size: 2rem;
+  color: rgb(255, 20, 147);
+  /* text-shadow: 0.125rem 0.125rem 0 white, -0.125rem -0.125rem 0 white,
+    0.125rem -0.125rem 0 white, -0.125rem 0.125rem 0 white; Add this */
+}
+
+#cst {
+  /* position: absolute; Add this */
+  margin-top: 10vh;
+  /* text-align: left; */
+  font-size: 2rem;
+  color: rgb(255, 20, 147);
+}
+
+@media (max-width: 1000px) {
+  #comingsoon {
+    font-size: 3rem;
+  }
+
+  #description {
+    padding-left: 10%;
+    font-size: 1.5rem;
+  }
+}
