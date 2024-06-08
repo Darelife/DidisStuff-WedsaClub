@@ -15,40 +15,14 @@
   </head>
   <body>
     <div id="navigationBar" class="bg-sky-950 fixed top-0 w-full">
-      <nav
-        class="container mx-auto px-6 py-2 flex justify-between items-center"
-      >
-        <a id="heading" class="text-orange-50 text-2xl" href="#"
-          ><b>WED</b><i>SA</i></a>
-        <div
-          class="navbar-menu hidden lg:flex lg:items-center lg:w-auto w-full"
-          id="navbarMenu"
-        >
-          <div class="lg:mr-auto">
-            <a
-              class="lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200"
-              href="#"
-            >
-              Home
-            </a>
-            <a
-              class="lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200"
-              href="#"
-            >
-              About
-            </a>
-            <a
-              class="lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200"
-              href="#"
-            >
-              Services
-            </a>
-            <a
-              class="lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200"
-              href="#"
-            >
-              Contact
-            </a>
+      <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <a id="heading" class="text-orange-50 text-2xl" href="#"><b>WED</b><i>SA</i></a>
+        <div class="navbar-menu flex lg:items-center lg:w-auto w-full" id="navbarMenu">
+          <div class="ml-auto">
+            <!-- <a class="smallLink lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200" href="#">Home</a> -->
+            <a class="smallLink lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200" href="#">About</a>
+            <a class="smallLink lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200" href="#">Services</a>
+            <a class="smallLink lg:inline-block py-2 px-4 text-orange-50 hover:text-gray-200" href="#">Contact</a>
           </div>
         </div>
       </nav>
@@ -56,7 +30,7 @@
     <div id="mainPageHome" class="grid grid-cols-2 mb-5 mt-10 p-6">
       <div id="Title" class="bg-orange-50 text-orange-50 text-2xl mr-4">
         <div class="container mx-auto px-6 py-6">
-          <h2 class="text-6xl font-bold text-sky-950">
+          <h2 id="titlee" class="text-6xl font-bold text-sky-950">
             Luxury Indian Wedding Planning Guidebook.
           </h2>
           <br />
@@ -70,7 +44,7 @@
           <button class="bg-amber-300 hover:bg-amber-400 text-sky-950 font-bold py-4 px-8 text-base rounded-r-full rounded-l-full">
             Explore Wedsa
           </button>
-        </div>
+        </div>2
       </div>
       <div id="stockImages" class="flex justify-center items-center">
         <img
@@ -89,7 +63,7 @@
         </div>
       </div>
       <div id="groupConsultationWhiteBox" class="bg-orange-50 rounded-l-full rounded-r-full">
-        <div class="flex container mx-auto px-6 py-16 items-center justify-center">
+        <div id="groupConsultationWhiteBoxExtra" class="flex container mx-auto px-6 py-16 items-center justify-center">
           <p class="text-2xl text-sky-950">
             Stay on top of trends and best tips by attending regular discussions and masterclasses by the best wedding experts on venue, entertainment, outfit, jewellery, photography, make up, relationships, budgeting, documentation, honeymoon, and so much more
           </p>
@@ -104,7 +78,7 @@
         </div>
       </div>
       <div id="expertConsultationBlackBox" class="bg-sky-950 rounded-l-full rounded-r-full">
-        <div class="flex container mx-auto px-6 py-16 items-center justify-center">
+        <div id="expertConsultationBlackBoxExtra" class="flex container mx-auto px-6 py-16 items-center justify-center">
           <p class="text-2xl text-orange-50">
             Connect with domain experts for your Event planning, Shopping, and any Shaadi requirements for Second opinions, Best Practices, and Checklist preparation.
             Save your time and money from wrong decisions and planning delays.
@@ -120,7 +94,7 @@
         </div>
       </div>
       <div id="bookingassistanceWhiteBox" class="bg-orange-50 rounded-l-full rounded-r-full">
-        <div class="flex container mx-auto px-6 py-16 items-center justify-center">
+        <div id="bookingassistanceWhiteBoxExtra" class="flex container mx-auto px-6 py-16 items-center justify-center">
           <p class="text-2xl text-sky-950">
             Your just a call away wedding planning assistant from day 1 as a soon-to-be wed to help you with expert and vendor bookings for the best customer experience.
           </p>
@@ -142,11 +116,11 @@
         </div>
       </div>
       <div id="oneStopSolutionGrid">
-        <div class="gridElementOneStop text-sky-950 bg-orange-50">Global Accessibility</div>
-        <div class="gridElementOneStop text-sky-950 bg-orange-50">Specialised experts</div>
-        <div class="gridElementOneStop text-sky-950 bg-orange-50">Booking Assistance</div>
-        <div class="gridElementOneStop text-sky-950 bg-orange-50">Call Away support</div>
-        <div class="gridElementOneStop text-sky-950 bg-orange-50">Everything Wedding</div>
+        <div class="gridElementOneStop text-sky-950 bg-orange-50 mb-2">Global Accessibility</div>
+        <div class="gridElementOneStop text-sky-950 bg-orange-50 mb-2">Specialised experts</div>
+        <div class="gridElementOneStop text-sky-950 bg-orange-50 mb-2">Booking Assistance</div>
+        <div class="gridElementOneStop text-sky-950 bg-orange-50 mb-2">Call Away support</div>
+        <div class="gridElementOneStop text-sky-950 bg-orange-50 mb-2">Everything Wedding</div>
       </div>
     </div>
     <div id="faq" class="bg-orange-50 pb-16">

@@ -67,3 +67,89 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (max-width: 720px) {
+  #oneStopSolutionGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2px;
+  }
+  #oneStopSolutionGrid .gridElementOneStop:nth-child(5) {
+    grid-column: span 2;
+  }
+  .smallLink {
+    padding: 0.25rem;
+  }
+  #titlee {
+    font-size: 2rem;
+  }
+  #mainPageHome {
+    grid-template-columns: 1fr;
+  }
+  /* #stockImages {
+    display: none;
+  } */
+  #groupConsultationWhiteBox {
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #groupConsultationWhiteBoxExtra {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  #expertConsultationBlackBox {
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #expertConsultationBlackBoxExtra {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  #bookingassistanceWhiteBox {
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  #bookingassistanceWhiteBoxExtra {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 720px) {
+  #oneStopSolutionGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #oneStopSolutionGrid .gridElementOneStop:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+  #oneStopSolutionGrid .gridElementOneStop:nth-child(5) {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+  #titlee {
+    font-size: 2rem;
+  }
+  .smallLink {
+    padding: 0.123rem;
+  }
+}
