@@ -11,13 +11,13 @@ body {
 #oneStopSolutionGrid {
   /* background-color: #262626; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
   /* margin-right: 5%;
   margin-left: 5%; */
   /* column-gap: 3%; */
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin-left: 25%;
+  margin-right: 25%;
   text-align: center;
   /* color: white; */
   justify-content: center;
@@ -82,8 +82,10 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-gap: 2px;
+    margin-left: calc(50vw - 156px);
+    margin-right: calc(50vw - 156px);
   }
-  #oneStopSolutionGrid .gridElementOneStop:nth-child(5) {
+  #oneStopSolutionGrid .gridElementOneStop:nth-child(3) {
     grid-column: span 2;
   }
   .smallLink {
@@ -148,15 +150,16 @@ body {
   #oneStopSolutionGrid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+    grid-gap: 7px;
   }
-  #oneStopSolutionGrid .gridElementOneStop:nth-child(4) {
+  /* #oneStopSolutionGrid .gridElementOneStop:nth-child(4) {
     grid-column: 1 / span 2;
     grid-row: 2;
   }
   #oneStopSolutionGrid .gridElementOneStop:nth-child(5) {
     grid-column: 2 / span 2;
     grid-row: 2;
-  }
+  } */
   #titlee {
     font-size: 2rem;
   }
