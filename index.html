@@ -35,9 +35,9 @@
           </h2>
           <br />
           <p class="text-2xl text-sky-950">
-            Manage events without phone calls, excel sheets, or running around! </n>
+            Manage events without phone calls, excel sheets, and running around! </n>
            
-            Flawless management now made possible at Weddings, Concerts, Conferences, Exhibitions, and other events.
+            Future odds Event Management is here
           </p>
           <br />
           <br />
@@ -49,11 +49,33 @@
         </div>2
       </div>
       <div id="stockImages" class="flex justify-center items-center">
-        <img
+        <!-- <img
           src="./static/img/WhatsApp Image 2024-06-01 at 12.42.30_09e4b8e6.jpg"
           alt="image"
           class="w-full h-96 object-cover object-center rounded-lg shadow-lg"
-        />
+        /> -->
+        <!-- play untitled.mp4 (autoplay, no controls, no loop) -->
+        <video
+          id="myVideo"
+          class="w-full h-96 object-cover object-center rounded-lg shadow-lg"
+          autoplay
+        >
+          <!--don't muted or loop -->
+          <source src="untitled.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <script>
+          document.getElementById('myVideo').addEventListener('click', function() {
+            // this.controls = !this.controls;
+            // this.mute = !this.mute;
+            if (this.paused) {
+              this.play();
+            } else {
+              this.pause();
+            }
+          });
+        </script>
         <!-- <iframe src="https://drive.google.com/file/d/1u_TDDuN3IcklGyMY_Eup8IJj5HQ_1_ur/preview" width="640" height="480" allow="autoplay"></iframe> -->
          <!-- <iframe 
           src="https://drive.google.com/file/d/1u_TDDuN3IcklGyMY_Eup8IJj5HQ_1_ur/preview?autoplay=1&loop=0&controls=0&mute=1" 
