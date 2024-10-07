@@ -207,7 +207,34 @@
         
         </div>
       </div>
+    </div>
+    <!-- Footer -->
+    <!-- <div id="footer" class="bg-sky-950 text-orange-50 py-6">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <div class="mb-6 lg:mb-0">
+          <h3 class="text-2xl font-bold">Contact Us</h3>
+          <p class="text-xl">123 Event Street, Event City, EV 12345</p>
+          <p class="text-xl">Phone: +1 (234) 567-890</p>
+          <p class="text-xl">Email: info@wedsa.com</p>
           </div>
+          <div>
+            <div name="followUs">
+              <h3 class="text-2xl font-bold">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="text-orange-50 hover:text-gray-200">Facebook</a>
+                <a href="#" class="text-orange-50 hover:text-gray-200">Twitter</a>
+                <a href="#" class="text-orange-50 hover:text-gray-200">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="footers">
+
+    </div>
+
     <script>
       function showans(a) {
         const ans = document.getElementById("ans"+a);
@@ -218,6 +245,72 @@
         const faqq = document.getElementById("faqq"+a);
         faqq.classList.add("rounded-l-xl");
         faqq.classList.add("rounded-r-xl");
+      }
+      // check if the screen size is less than 768px
+
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 768) {
+        // // add something to make the "follow us" div in the footer to be below the address
+        // const footer = document.querySelector("#footer .flex");
+        // footer.classList.add("flex-col");
+        // footer.classList.remove("lg:flex-row");
+
+        // // make the follow us left aligned
+        // const followUs = document.querySelector("#footer [name=followUs]");
+        // followUs.classList.add("mb-6");
+        // // it's still not left aligned
+        // // add a margin to the left
+        // followUs.style.marginLeft = "0px";
+        let footers = document.getElementById("footers");
+        footers.innerHTML = `
+        <div id="footer" class="bg-sky-950 text-orange-50 py-6">
+          <div class="container mx-auto px-6">
+            <div class="justify-between items-center">
+              <div class="mb-6 lg:mb-0">
+              <h3 class="text-2xl font-bold">Contact Us</h3>
+              <p class="text-xl">303, B67, Vardhaman Medallion, University Marg</p>
+              <p class="text-xl">Bapunagar, Jaipur, 302015</p>
+              <p class="text-xl">Phone: +91 9116459036</p>
+              </div>
+              <div>
+                <div name="followUs">
+                  <h3 class="text-2xl font-bold">Follow Us</h3>
+                  <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/wedsaclub/" class="text-orange-50 hover:text-gray-200">Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`
+                    // <a href="#" class="text-orange-50 hover:text-gray-200">Facebook</a>
+                    // <a href="#" class="text-orange-50 hover:text-gray-200">Twitter</a>
+
+      } else {
+        let footers = document.getElementById("footers");
+        footers.innerHTML = `
+        <div id="footer" class="bg-sky-950 text-orange-50 py-6">
+          <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+              <div class="mb-6 lg:mb-0">
+              <h3 class="text-2xl font-bold">Contact Us</h3>
+              <p class="text-xl">303, B67, Vardhaman Medallion, University Marg</p>
+              <p class="text-xl">Bapunagar, Jaipur, 302015</p>
+              <p class="text-xl">Phone: +91 9116459036</p>
+              </div>
+              <div>
+                <div name="followUs">
+                  <h3 class="text-2xl font-bold">Follow Us</h3>
+                  <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/wedsaclub/" class="text-orange-50 hover:text-gray-200">Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>`
+                    // <a href="#" class="text-orange-50 hover:text-gray-200">Facebook</a>
+                    // <a href="#" class="text-orange-50 hover:text-gray-200">Twitter</a>
       }
     </script>
   </body>
